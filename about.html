@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About - Savory Haven</title>
+  <meta name='description' content='Learn the story behind Savory Haven, our chef, sourcing philosophy, and commitment to hospitality.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <!-- Navigation -->
+  <nav class='bg-white shadow sticky top-0 z-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-gray-800'>Savory Haven</a>
+        </div>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-600 hover:text-gray-800'>Home</a>
+          <a href='about.html' class='text-gray-600 hover:text-gray-800'>About</a>
+          <a href='contact.html' class='text-gray-600 hover:text-gray-800'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-800 focus:outline-none'>Menu</button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='hidden md:hidden'>
+      <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+      <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About</a>
+      <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class='py-16'>
+    <div class='max-w-5xl mx-auto px-4'>
+      <h1 class='font-[Playfair Display] text-3xl md:text-4xl mb-4'>Our Story</h1>
+      <p class='text-gray-700 leading-relaxed mb-6'>Savory Haven began as a small neighborhood bistro focused on warm hospitality and honest, seasonal cooking. Our name reflects the heart of what we do: create memorable experiences through thoughtful sourcing, precise technique, and a welcoming environment.</p>
+      <img src='https://images.unsplash.com/photo-1709837167684-47d7ccf0ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBjaGVmJTIwaW4lMjBraXRjaGVufGVufDB8MHx8fDE3NTg3ODMwODB8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Portrait of the executive chef in a busy kitchen' class='w-full rounded shadow mb-6'>
+      <div class='grid md:grid-cols-3 gap-6'>
+        <div class='p-4 bg-gray-50 rounded shadow'>
+          <h3 class='font-semibold mb-2'>Meet the Chef</h3>
+          <p class='text-sm text-gray-700'>Chef Maria Rivera brings 20 years of culinary craft, blending classic techniques with modern seasonal ingredients.</p>
+        </div>
+        <div class='p-4 bg-gray-50 rounded shadow'>
+          <h3 class='font-semibold mb-2'>Sourcing Philosophy</h3>
+          <p class='text-sm text-gray-700'>We partner with local farms and responsible producers to ensure peak freshness and sustainability.</p>
+        </div>
+        <div class='p-4 bg-gray-50 rounded shadow'>
+          <h3 class='font-semibold mb-2'>A Warm Welcome</h3>
+          <p class='text-sm text-gray-700'>Hospitality is at the core of our service philosophy. We love creating spaces for connection and celebration.</p>
+        </div>
+      </div>
+      <div class='mt-6 text-center'>
+        <a href='contact.html' class='inline-block bg-amber-200 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-amber-300 transition-all duration-300'>Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='mt-16 bg-[#8B4513] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='space-y-3'>
+          <h3 class='text-2xl font-bold'>Savory Haven</h3>
+          <p class='text-sm text-gray-200'>A neighborhood spot with a global palate, dedicated to warmth and craft.</p>
+        </div>
+        <div>
+          <h4 class='font-semibold mb-3'>Our Philosophy</h4>
+          <p class='text-sm text-gray-200'>Seasonal menus, sustainable sourcing, and generous hospitality define every night here.</p>
+        </div>
+        <div>
+          <h4 class='font-semibold mb-3'>Contact</h4>
+          <p class='text-sm'>123 Culinary Street</p>
+          <p class='text-sm'>Downtown District</p>
+        </div>
+        <div>
+          <h4 class='font-semibold mb-3'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-white hover:text-black'>Home</a></li>
+            <li><a href='contact.html' class='text-white hover:text-black'>Reservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-200 my-6'>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <p class='text-sm text-gray-200'>© 2025 Savory Haven. All rights reserved.</p>
+        <p class='text-sm text-gray-200'>Licensed & Insured • Health Rating: A+</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileButton && mobileMenu) {
+      mobileButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
